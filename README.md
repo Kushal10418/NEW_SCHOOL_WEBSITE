@@ -22,7 +22,7 @@ Frontend: HTML5, CSS3
 
 Backend: PHP
 
-Database: MySQL
+Database: MySQL EXCLE
 
 Server: XAMPP
 
