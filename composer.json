@@ -1,0 +1,19 @@
+{
+    "name": "kulpiiti/htdocs",
+    "autoload": {
+        "psr-4": {
+            "Kulpiiti\\Htdocs\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "kulpiiti",
+            "email": "kushalbera755@gmail.com"
+        }
+    ],
+    "require": {
+        "phpoffice/phpspreadsheet": "^5.1",
+        "mpdf/mpdf": "^8.2",
+        "mpdf/qrcode": "^1.2"
+    }
+}
