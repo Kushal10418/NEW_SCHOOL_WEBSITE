@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="en">
 <head>
@@ -14,8 +13,13 @@
         form input[type="text"],
         [type="file"],
         [type="date"],
-        [type="email"]
-         {
+        [type="email"],
+        [type="password"]
+        {
+            border: 2px solid wheat;
+        }
+
+         select.form-control{
             border: 2px solid wheat;
         }
 
@@ -194,6 +198,30 @@ footer p{
     </div>
 </form>
     </div>
+    <div class="section">
+    <h2>Student User ID and Password Block and Unblock</h2>
+    <form action="block_unblock.php" method="POST" class="row g-3">
+        <div class="col-md-6">
+            <label for="username" class="form-label">Student Username</label>
+            <input type="text" name="username" id="username" class="form-control" placeholder="Student Username" required>
+        </div>
+        <div class="col-md-6">
+            <label for="password" class="form-label">Student Password</label>
+            <input type="password" name="password" id="password" class="form-control" placeholder="Student Password" required>
+        </div>
+        <div class="col-md-6">
+            <label for="action" class="form-label">Action</label>
+            <select name="action" id="action" class="form-control" required>
+                 <option value="">Select Option</option>
+                <option value="block">Block</option>
+                <option value="unblock">Unblock</option>
+            </select>
+        </div>
+        <div class="col-12 d-flex justify-content-end">
+            <button type="submit" class="btn btn-primary">Submit  </button>
+        </div>
+    </form>
+</div>
     <div class="section">
     <h2>Delete Notice</h2>
     <form action="delete_notice.php" method="post" class="row g-3">
